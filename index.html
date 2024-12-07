@@ -1,1 +1,51 @@
-Hello, World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Documentation Links</h1>
+    <ul id="links-list">
+        <!-- Links will be populated by JavaScript -->
+    </ul>
+    <script src="links.js"></script>
+    <script>
+        // Dynamically populate links
+        const linksList = document.getElementById('links-list');
+        links.forEach(link => {
+            const listItem = document.createElement('li');
+            const anchor = document.createElement('a');
+            anchor.href = link.url;
+            anchor.textContent = link.name;
+            anchor.target = '_blank';
+            listItem.appendChild(anchor);
+            linksList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
