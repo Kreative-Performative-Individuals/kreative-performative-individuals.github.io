@@ -43,10 +43,27 @@
         .card button:hover {
             background-color: #0056b3;
         }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .header img {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            border: 1px solid #333;
+            border-radius: 5px; /* Same border-radius as other elements */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+        }
     </style>
 </head>
 <body>
-    <h1>Kreative Performative Individuals</h1>
+    <div class="header">
+        <h1>Kreative, Performative Individuals</h1>
+        <img src="images/logo.jpg" alt="Logo">
+    </div>
     <div id="links-container">
         <!-- Cards will be populated by JavaScript -->
     </div>
