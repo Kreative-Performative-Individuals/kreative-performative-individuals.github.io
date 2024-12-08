@@ -61,9 +61,15 @@
 </head>
 <body>
     <div class="header">
-        <h1>Kreative, Performative Individuals</h1>
-        <img src="images/logo.jpg" alt="Logo">
+        <h1>Smart Dashboard for Industry 5.0</h1>
+        <img src="images/logo.jpg" alt="Logo" id="logo">
     </div>
+    <p style="text-align: center; color: #444;">
+        In this page you will find links to the documentations of the various microservices that compose the application.
+        <br>
+        This is an academic project developed by the Kreative, Performative Individuals team (aka Team B) for 
+        the Smart Applications course at the University of Pisa, a.y. 2024-2025.
+    </p>
     <div id="links-container">
         <!-- Cards will be populated by JavaScript -->
     </div>
@@ -86,6 +92,25 @@
             card.appendChild(button);
             linksContainer.appendChild(card);
         });
+
+        // Change logo on click
+        const logo = document.getElementById('logo');
+        logo.onclick = () => {
+            const originalSrc = logo.src;
+            logo.src = 'images/hector.jpg';
+            setTimeout(() => {
+                logo.src = originalSrc;
+            }, 1000);
+        };
     </script>
+    <!--<footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #333; color: white;">
+        <span>Kreative, Performative Individuals</span>
+        <a href="https://github.com/kreative-performative-individuals" target="_blank" style="color: white;">
+            <img src="images/github-mark/github-mark.png" alt="GitHub" style="height: 24px;">
+        </a>
+    </footer>-->
+    <a href="https://github.com/Kreative-Performative-Individuals" target="_blank" style="position: fixed; bottom: 10px; right: 10px;">
+        <img src="images/github-mark/github-mark.png" alt="GitHub" style="height: 40px;">
+    </a>
 </body>
 </html>
