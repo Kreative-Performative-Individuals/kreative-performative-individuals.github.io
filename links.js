@@ -4,6 +4,6 @@ const links = [
     { name: "Data Processing", url: "https://kreative-performative-individuals.github.io/data-preprocessing-/" },
     { name: "API", url: "https://kreative-performative-individuals.github.io/api-gateway/" },
     { name: "Chatbot & RAG", url: "https://kreative-performative-individuals.github.io/RAG5/" },
-    { name: "KPI Calculation Engine", url: "https://kreative-performative-individuals.github.io/kpi-calculation-engine/" },
+    { name: "KPI Calculation Engine", url: "https://kreative-performative-individuals.github.io/KPI-Engine/" },
     // Add more links as needed
 ];
